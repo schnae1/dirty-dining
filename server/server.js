@@ -23,7 +23,7 @@ apolloServer.start().then((res) => {
   });
 
   cron.schedule('* * * * *', () => {
-    //uploadData();
+    uploadData();
   });
 
   app.listen(process.env.PORT, () => {
